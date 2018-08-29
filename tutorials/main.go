@@ -7,13 +7,17 @@ import (
 	"github.com/jorgecmb/tutorials/constants"
 	"github.com/jorgecmb/tutorials/constantsnumeric"
 	"github.com/jorgecmb/tutorials/conversions"
+	"github.com/jorgecmb/tutorials/defers"
 	"github.com/jorgecmb/tutorials/exportednames"
+	"github.com/jorgecmb/tutorials/fors"
 	"github.com/jorgecmb/tutorials/functions"
 	"github.com/jorgecmb/tutorials/functionscont"
+	"github.com/jorgecmb/tutorials/ifs"
 	"github.com/jorgecmb/tutorials/imports"
 	"github.com/jorgecmb/tutorials/multipleresults"
 	"github.com/jorgecmb/tutorials/namedresults"
 	"github.com/jorgecmb/tutorials/packages"
+	"github.com/jorgecmb/tutorials/switches"
 	"github.com/jorgecmb/tutorials/typeinference"
 	"github.com/jorgecmb/tutorials/variables"
 	"github.com/jorgecmb/tutorials/variablesinitializers"
@@ -71,6 +75,18 @@ func main() {
 
 	fmt.Printf("constants-numeric: ")
 	constantsnumeric.Run()
+
+	fmt.Printf("fors: ")
+	fors.Run()
+
+	fmt.Printf("ifs: ")
+	ifs.Run()
+
+	fmt.Printf("switches: ")
+	switches.Run()
+
+	fmt.Printf("defers: ")
+	defers.Run()
 
 	fmt.Println("\n**** FINISING MAIN ****")
 }

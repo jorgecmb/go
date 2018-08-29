@@ -3,6 +3,10 @@ package main
 import (
 	"fmt"
 
+	"github.com/jorgecmb/tutorials/basictypes"
+	"github.com/jorgecmb/tutorials/constants"
+	"github.com/jorgecmb/tutorials/constantsnumeric"
+	"github.com/jorgecmb/tutorials/conversions"
 	"github.com/jorgecmb/tutorials/exportednames"
 	"github.com/jorgecmb/tutorials/functions"
 	"github.com/jorgecmb/tutorials/functionscont"
@@ -10,9 +14,11 @@ import (
 	"github.com/jorgecmb/tutorials/multipleresults"
 	"github.com/jorgecmb/tutorials/namedresults"
 	"github.com/jorgecmb/tutorials/packages"
+	"github.com/jorgecmb/tutorials/typeinference"
 	"github.com/jorgecmb/tutorials/variables"
 	"github.com/jorgecmb/tutorials/variablesinitializers"
 	"github.com/jorgecmb/tutorials/variablesinitializersshort"
+	"github.com/jorgecmb/tutorials/zero"
 )
 
 func main() {
@@ -47,6 +53,24 @@ func main() {
 
 	fmt.Printf("variables-initializers-short: ")
 	variablesinitializersshort.Run()
+
+	fmt.Printf("basic-types: ")
+	basictypes.Run()
+
+	fmt.Printf("zero: ")
+	zero.Run()
+
+	fmt.Printf("conversions: ")
+	conversions.Run()
+
+	fmt.Printf("typeinference: ")
+	typeinference.Run()
+
+	fmt.Printf("constants: ")
+	constants.Run()
+
+	fmt.Printf("constants-numeric: ")
+	constantsnumeric.Run()
 
 	fmt.Println("\n**** FINISING MAIN ****")
 }

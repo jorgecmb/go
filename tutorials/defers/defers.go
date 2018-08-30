@@ -23,4 +23,5 @@ func simpleDefer() {
 func Run() {
 	simpleDefer()
 	stackedDefers()
+	fmt.Println()
 }

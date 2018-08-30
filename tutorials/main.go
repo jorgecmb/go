@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 
+	"github.com/jorgecmb/tutorials/arrays"
 	"github.com/jorgecmb/tutorials/basictypes"
 	"github.com/jorgecmb/tutorials/constants"
 	"github.com/jorgecmb/tutorials/constantsnumeric"
@@ -14,9 +15,13 @@ import (
 	"github.com/jorgecmb/tutorials/functionscont"
 	"github.com/jorgecmb/tutorials/ifs"
 	"github.com/jorgecmb/tutorials/imports"
+	"github.com/jorgecmb/tutorials/maps"
 	"github.com/jorgecmb/tutorials/multipleresults"
 	"github.com/jorgecmb/tutorials/namedresults"
 	"github.com/jorgecmb/tutorials/packages"
+	"github.com/jorgecmb/tutorials/pointers"
+	"github.com/jorgecmb/tutorials/slices"
+	"github.com/jorgecmb/tutorials/structs"
 	"github.com/jorgecmb/tutorials/switches"
 	"github.com/jorgecmb/tutorials/typeinference"
 	"github.com/jorgecmb/tutorials/variables"
@@ -87,6 +92,21 @@ func main() {
 
 	fmt.Printf("defers: ")
 	defers.Run()
+
+	fmt.Printf("pointers: ")
+	pointers.Run()
+
+	fmt.Printf("structs: ")
+	structs.Run()
+
+	fmt.Printf("arrays: ")
+	arrays.Run()
+
+	fmt.Printf("slices: ")
+	slices.Run()
+
+	fmt.Printf("maps: ")
+	maps.Run()
 
 	fmt.Println("\n**** FINISING MAIN ****")
 }
